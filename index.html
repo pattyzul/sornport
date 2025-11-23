@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ----------------- HEADER ------------------- -->
+<div id="header">
+  <div class="container">
+    <nav class="nav">
+      <img src="photo/llok.png" class="pho">
+
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="header-text">
+      <p>Portfolio</p>
+      <h1>Welcome <span>To My</span> Website</h1>
+    </div>
+  </div>
+</div>
+
+
+<!-- ----------------- ABOUT ------------------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+
+      <div class="about-col-1">
+        <img src="photo/pok.jpg">
+      </div>
+
+      <div class="about-col-2">
+        <h1 class="sub-title">แนะนำตัว</h1>
+        <p>ชื่อ สรณฑัยห์ นามสกุล เลี่ยวตระกูล</p>
+        <p>ชื่อเล่น พะแพง อายุ 17 ปี</p>
+        <p>เกิดวันอังคาร ที่ 26 เดือน กุมภาพันธ์ ปี 2551</p>
+        <p>หมู่เลือด บี เชื้อชาติ ไทย สัญชาติ ไทย ศาสนา พุทธ</p>
+        <p>งานอดิเรก เล่นบาสเกตบอลและวาดรูป</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('code')">Code</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Python</span><br>40%</li>
+            <li><span>HTML</span><br>70%</li>
+            <li><span>CSS</span><br>40%</li>
+            <li><span>C</span><br>80%</li>
+            <li><span>JavaScript</span><br>40%</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>29 เมษายน 2567</span><br>เข้าร่วมกิจกรรมวาดภาพ “กำแพงแห่งความหวัง”</li>
+            <li><span>29 เมษายน 2567</span><br>เข้าร่วม WORKSHOP ที่ มจธ.</li>
+            <li><span>25–29 ธันวาคม 2567</span><br>เข้าร่วมค่าย “เพราะครูเพาะคน” ครั้งที่ 15</li>
+            <li><span>17 มกราคม 2567</span><br>แข่งขันออกแบบด้วยโปรแกรมคอมพิวเตอร์ (รองชนะเลิศอันดับ 2)</li>
+            <li><span>19 มกราคม 2567</span><br>เข้ารอบ 10 ทีมสุดท้ายประกวดแนวคิดนวัตกรรม</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2013–2015</span><br>โรงเรียนอนุบาลปาณยา</li>
+            <li><span>2016–2025</span><br>โรงเรียนพระหฤทัยคอนแวนต์</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="code">
+          <ul>
+            <li><span>โค้ดร้านค้า</span><br><a href="shop.html">คลิกเพื่อดู</a></li>
+            <li><span>โค้ด Login</span><br><a href="login.html">คลิกเพื่อดู</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---------------performance/activity--------------------->
+<div id="activities">
+   <div class="container">
+       <h1 class="sub-title">ผลงาน และ กิจกรรม</h1>
+       <div class="work-list">
+           <div class="work">
+               <img src="photo/S__2162690 (1).jpg">
+               <div class="layer">
+                   <h3>ได้จัดงานสิ่งแวดล้อมโลกให้เด็กชั้นอนุบาล2-3 และ เป็นพิธีกรในงานนี้</h3>
+               </div>
+           </div>
+           <div class="work">
+               <img src="photo/S__17080373 (1).jpg">
+               <h3>ได้เข้าร่วมค่าย"ศิลป์แพทย์" ครั้งที่3 ที่ มหาลัยมหาวิทยาลัยพระจอมเกล้าธนบุรี</h3>
+           </div>
+           <div class="work">
+               <img src="photo/3.jpg">
+               <h3>ได้เข้าร่วมการทำจิตอาสาปลูกป่า หาดทรายเม็ดแรก ของ โรงเรียนพระหฤทัยคอนแวนต์</h3>
+           </div>
+           <div class="work">
+               <img src="photo/6.jpg">
+               <h3>ได้เข้าร่วมค่าย"เพราะครู เพาะคน"ครั้งที่15 ที่ มหาวิทยาลัยศรีนครินทรวิโรฒ</h3>
+           </div>
+           <div class="work">
+               <img src="photo/9.JPG">
+               <h3>ได้เข้าร่วมเป็น 10 ทีมสุดท้ายของการแข่งขันประกวดแนวคิดนวัตกรรม ที่ มหาวิทยาลัยศรีนครินทรวิโรฒ</h3>
+           </div>
+           <div class="work">
+               <img src="photo/14.jpg">
+               <h3> ได้เข้าร่วมการแข่งขันออกแบบด้วยโปรแกรมคอมพิวเตอร์ ที่ โรงเรียนอัสสัมชัญ (ได้รางวัลรองชนะเลิศอันดับที่2)</h3>
+           </div>
+           <div class="work">
+               <img src="photo/1.png">
+               <h3>ได้เข้าร่วมการประกวดความคิดสร้างสรรค์ในโครงการ"คิดใหญ่ไปให้สุดราง" ของ สถาบันวิจัยและพัฒนาเทคโนโลยีระบบราง</h3>
+           </div>
+           <div class="work">
+               <img src="photo/13.jpg">
+               <h3>ด้เข้าร่วมการคิดนวัตกรรมและสิ่งประดิษฐ์ ของ ราชวิทยาลัยจุฬาภรณ์</h3>
+           </div>
+           <div class="work">
+               <img src="photo/10.jpg">
+               <h3>กิจกรรมกีฬาสี</h3>
+           </div>
+           <div class="work">
+               <img src="photo/4.jpg">
+               <h3>ได้เข้าร่วม WORKSHOP ที่ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</h3>
+           </div>
+           <div class="work">
+               <img src="photo/12.jpg">
+               <h3>ได้เข้าร่วมมหกรรมการศึกษาวิชาการ พัฒนาทักษาวิชาการและกิจกรรมเชิงปฏิบัติการ</h3>
+           </div>
+           <div class="work">
+               <img src="photo/8.jpg">
+               <h3>ได้เข้าร่วมการทำจิตอาสาทำสื่อการเรียนรู้พวงกุญแจสูตรคูณ</h3>
+           </div>
+           <div class="work">
+               <img src="photo/2.jpg">
+               <h3>ได้เข้าร่วมกิจกรรมการแข่งวาดภาพในหัวข้อ"กำแพงแห่งความหวัง" ที่ บ้านคามิลเลียนเพื่อเด็กพิการ</h3>
+           </div>
+           <div class="work">
+               <img src="photo/11.jpg">
+               <h3>ได้เข้าร่วมการทำจิตอาสาดูแลน้องๆที่บ้านพักคามิลเลียน</h3>
+           </div>
+       </div>
+   </div>
+</div>
+</body>
+
+<!-- ----------------- CERTIFICATES ------------------- -->
+<div id="certificates">
+  <div class="container">
+    <h1 class="sub-title">My Certificates</h1>
+    <div class="work-list">
+           <div class="work">
+               <img src="photo/20.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/21.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/22.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/23.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/24.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/25.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/28.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/29.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/30.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/31.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/32.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/S__17080374_0 (1).jpg">
+           </div>
+           <div class="work">
+               <img src="photo/S__17080377_0 (1).jpg">
+           </div>
+            <div class="work">
+               <img src="photo/S__17080378_0 (1).jpg">
+           </div>
+            <div class="work">
+               <img src="photo/S__17080376_0.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/27.jpg">
+           </div>
+           <div class="work">
+               <img src="photo/26.jpg">
+           </div>
+    </div>
+</div>
+
+
+<!-- ----------------- CONTACT ------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+
+      <div class="contact">
+        <h1 class="sub-title">ช่องทางการติดต่อ</h1>
+        <h3><i class="fas fa-paper-plane"></i> Gmail : sornnataileawtakoon@gmail.com</h3>
+        <h3><i class="fas fa-phone-square-alt"></i> เบอร์โทร : 090-5637926</h3>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1KjRRyrDTr/?mibextid=wwXIfr">Facebook : Sornnatai leawtakoon</a>
+          <a href="https://www.instagram.com/zxer0ai/">Instagram : zxer0ai</a>
+          <a href="https://line.me/ti/p/zjl9Cgbt4n">Line : p26022551</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="copyright">
+    <h3>ขอบคุณค่ะ thank you หวังว่าจะรับรักนะคะ</h3>
+  </div>
+</div>
+
+
+<!-- ----------------- SCRIPT ------------------- -->
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(let tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(let tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+</body>
+</html>
